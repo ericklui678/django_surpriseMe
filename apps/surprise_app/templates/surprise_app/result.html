@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Surprises</title>
+    </head>
+    <body>
+        <h1>Surprises</h1>
+        {% load extras %}
+        {% for i in num %}
+            {{ values|return_item:i }}<br>
+        {% endfor %}
+    </body>
+</html>
